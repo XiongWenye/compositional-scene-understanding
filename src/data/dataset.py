@@ -95,11 +95,11 @@ class CLEVR2DPosBlender(Dataset):
 
         if self.split == 'train':
             self.data_path = os.path.join(data_root, "images/train")
-            self.json_path = os.path.join(self.data_root, f"CLEVR_train_scenes.json")
+            self.json_path = os.path.join(self.data_root, f"scenes/CLEVR_train_scenes.json")
             self.max_num = 50000
         elif self.split == 'val':
             self.data_path = os.path.join(data_root, "images/val")
-            self.json_path = os.path.join(self.data_root, f"CLEVR_val_scenes.json")
+            self.json_path = os.path.join(self.data_root, f"scenes/CLEVR_val_scenes.json")
             self.max_num = 100
 
 

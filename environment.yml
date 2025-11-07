@@ -70,7 +70,7 @@ dependencies:
       - cachetools==5.3.1
       - certifi==2022.12.7
       - charset-normalizer==2.1.1
-      - clip==1.0
+      - git+https://github.com/openai/CLIP.git
       - cmake==3.27.6
       - contourpy==1.1.1
       - coverage==7.5.4
@@ -215,14 +215,14 @@ dependencies:
       - termcolor==2.4.0
       - threadpoolctl==3.2.0
       - timm==1.0.9
-      - tokenizers==0.14.1
+      - tokenizers
       - torch==2.0.1
       - torchaudio==2.0.2
       - torchtyping==0.1.5
       - torchvision==0.15.2
       - tqdm==4.66.1
       - traitlets==5.11.2
-      - transformers==4.34.0
+      - transformers
       - triton==2.0.0
       - typeguard==2.13.3
       - typing-extensions==4.12.2
