@@ -30,9 +30,9 @@ def main(args):
     vae.to(device = device, dtype=weight_dtype)
     vae.requires_grad_(False)
 
-    ckpt_step = 20000
+    ckpt_step = 80000
     unet = UNet2DConditionModel.from_pretrained(
-        f'/n/home11/wxiong/compositional-scene-understanding/outputs/clevr/checkpoint-{ckpt_step}', subfolder="unet2dconditionmodel".lower())
+        f'/n/holylabs/ydu_lab/Lab/wxiong/compositional-scene-understanding/outputs/clevr/checkpoint-{ckpt_step}', subfolder="unet2dconditionmodel".lower())
     unet = unet.to(device=device, dtype=weight_dtype)
     unet.requires_grad_(False)
     unet.eval()
